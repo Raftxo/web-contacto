@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Contacta con nosotros</h1>
+
+        <p>Rellena el siguiente formulario.</p>
+
+        <form
+            name="contacto"
+            method="POST"
+            data-netlify="true"
+            action="/gracias"
+        >
+
+            <label>Nombre:</label>
+            <input
+                type="text"
+                name="nombre"
+                required
+            >
+
+            <label>Correo electrónico:</label>
+            <input
+                type="email"
+                name="email"
+                required
+            >
+
+            <label>Asunto:</label>
+            <input
+                type="text"
+                name="asunto"
+                required
+            >
+
+            <label>Mensaje:</label>
+            <textarea
+                name="mensaje"
+                rows="5"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Enviar mensaje
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
